@@ -30,6 +30,7 @@ library
       AST
       Runner
       Runtime.WAMH
+      Runtime.WAMImpl
       Runtime.WAMMain
   other-modules:
       Paths_wam_llvm
@@ -70,4 +71,7 @@ test-suite wam-llvm-test
   build-depends:
       base >=4.7 && <5
     , wam-llvm
+    , tasty
+    , tasty-golden
+    , tasty-hunit
   default-language: Haskell2010
